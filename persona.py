@@ -7,6 +7,13 @@ class Persona:
         self.nombre = un_nombre 
         self.edad = una_edad
         self.profesion = una_prof
-        print ("Hola soy", self.nombre, "tengo", self.edad, "y soy un", self.profesion)
+        print ("Hola soy", self.nombre, "tengo", self.edad, "anhos", "y soy una", self.profesion)
+    
+    def gritar(self):
+        print("ESTOY GRITANDO!", self.profesion)
 
-charlie = Persona("Charlie", 31, "Designer")
+charlie = Persona("Shakira", 69, "cadera")
+print(charlie.nombre)  #aca se imprime solo el nombre de la clase, porque ya le asignamos atributo a la clase entonces llamamos
+#charlie.nombre para imprimir solo el valor del atributo "nombre".
+
+charlie.gritar()
